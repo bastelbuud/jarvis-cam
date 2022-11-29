@@ -7,8 +7,6 @@
 #include <PubSubClient.h>
 #include <ArduinoJson.h>
  
-//const char* WIFI_SSID = "NewWlanIGC";
-//const char* WIFI_PASS = "Secureit@most";
 const char* WIFI_SSID = WIFI_SSID_SECRET;
 const char* WIFI_PASS = WIFI_SSID_SECRET;
 int8_t newMACAddress[] = {0x62, 0xB6, 0x66, 0x17, 0x0D, 0xF6};
@@ -18,14 +16,11 @@ int8_t newMACAddress[] = {0x62, 0xB6, 0x66, 0x17, 0x0D, 0xF6};
 #define LIGHT_PIN 4
 
 // MQTT Broker
-//const char *mqtt_broker = MQTT_BROKER_SECRET;
-const char *mqtt_broker = "192.168.2.88";
+const char *mqtt_broker = MQTT_BROKER_SECRET;
 const char *topic = "DUMSHOME/JARVIS/jarvisCam";
 const char *subscribeTopic = "DUMSHOME/JARVIS/jarvisCam/#";
 const char *topicIP = "DUMSHOME/JARVIS/jarvisCam/ip";
 const char *topicMsg = "DUMSHOME/JARVIS/jarvisCam/msg";
-//const char *mqtt_username = "openhabian";
-//const char *mqtt_password = "openhabian";
 const char *mqtt_username = MQTT_USERNAME_SECRET;
 const char *mqtt_password = MQTT_PASSWORD_SECRE;
 const int mqtt_port = 1883;
